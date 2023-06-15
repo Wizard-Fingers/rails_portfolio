@@ -1,0 +1,107 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;800&display=swap");
+/* end */
+
+/* html universal */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+/* end */
+
+/* layouts/application.html.erb */
+.navbar {
+  top: 0;
+  width: full;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  max-width: 1200px;
+  height: 100px;
+}
+.navbar_container a {
+  text-decoration: none;
+  margin-top: -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #000;
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .navbar_container a {
+    font-size: 3rem;
+  }
+}
+
+.navbar_container a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  font-style: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties as needed */
+}
+
+.nav_right_wrapper {
+  display: flex;
+  width: 20%;
+  height: 100px;
+}
+
+.navbar_logo {
+  margin-right: 0%;
+  margin-top: 2.8rem;
+  position: absolute;
+  transform: rotate(20deg);
+  right: 45px;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar_logo {
+    display: block;
+  }
+}
+
+.nav_underline {
+  margin-top: 5.5rem;
+  margin-left: -1rem;
+  position: absolute;
+  width: calc(85% - 2rem); /* Adjusted width */
+  height: 5px;
+  background-color: black;
+  border-radius: 2.5px;
+}
+
+@media (min-width: 768px) {
+  .nav_underline {
+    height: 2.5px;
+    border-radius: 5px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 4rem;
+}
+.footer_overline {
+  margin-top: 5.5rem;
+  bottom: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: black;
+}
+
+/* end */
+
+/* pages/home.html.erb */
+
+/* end */

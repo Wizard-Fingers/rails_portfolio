@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BaseProject</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "global", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <nav class="navbar">
+    <section class="navbar_container">
+      <a data-text="about"
+>
+        <p>about</p>
+      </a>
+      <a data-text="contact"
+>
+        <p>contact</p>
+      </a>
+      <a data-text="blog"
+>
+        <p>blog</p>
+      </a>
+      <div class="nav_right_wrapper">
+      </section>
+      <aside class="navbar_logo">
+        <%= image_tag('iconR.png', size: '65x65'
+) %>
+      </aside>
+      <div class="nav_underline"></div>
+    </div>
+  </nav>
+  <body>
+    <%= yield %>
+  </body>
+  <footer class="footer">
+    <div class="footer_overline"></div>
+    <section>
+    </section>
+  </footer>
+</html>
